@@ -27,7 +27,9 @@ export default{
   },
   watch : { //데이터 변경에 따른 추가 작업 정의
     month(){
-      if(this.month<10){
+      console.log('실행', this.month)
+      if((this.month.toString()).length ==1
+                        && this.month <10){
         this.month = '0' + this.month;
       }
     }
