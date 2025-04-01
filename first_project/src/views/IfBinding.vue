@@ -7,8 +7,8 @@
   <p v-else> 성적 : D</p>
   <hr>
   <input type="checkbox" v-model="chData">동의여부
-
-  <button v-show="chData">  <hr>다음단계로 진행</button>
+  <hr>
+  <button v-show="chData">다음단계로 진행</button>
 
 </div>
 </template>

@@ -41,10 +41,10 @@
 <p> {{ hobby }}</p>
     </div>
 <img v-bind:style="styleData" v-bind:src="imgUrl">
-<div class="container"
-v-bind:class="myClass"> Class Binding Second</div>
-<div class="container"
-v-bind:class="{'active' : isActive, 'text-red' : hasError}"> Class Binding First</div>
+<div class="container"v-bind:class="myClass"> Class Binding Second</div>
+<div class="container"v-bind:class="{'active' : isActive, 'text-red' : hasError}"> Class Binding First
+
+</div>
        </div>
 </template>
 
@@ -83,9 +83,7 @@ myClass : 'active',
     hasError : function(){
       return !this.isActive;
     }
-
   }
-
 }
 
 

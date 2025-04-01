@@ -4,7 +4,9 @@
     <router-link to="/about">About</router-link> |
     <router-link to="/Data">Data</router-link> |
     <router-link :to="{name : 'list'}">List</router-link> |
-    <router-link to="/IfBind">IfBind</router-link> 
+    <router-link to="/IfBind">IfBind</router-link> | 
+    <router-link to="/OnEvent">OnEvent</router-link> |
+    <router-link to="/ComputedWatch">ComputedWatch</router-link> |
             <!-- : v-bind의 약어로 사용됨-->
   </nav>
   <router-view/>

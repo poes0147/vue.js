@@ -16,8 +16,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(prod,index) in products"
-        v-bind.key="prod.product_no">
+        <tr v-for="(prod,index) in products" v-bind.key="prod.product_no">
           <td>{{ prod.product_no }}</td>
           <td>{{ prod.product_name }}</td>
           <td>{{ prod.price }}</td>

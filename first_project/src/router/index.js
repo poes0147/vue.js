@@ -4,6 +4,8 @@ import HomeView from '../views/HomeView.vue'
 import DataBinding from '@/views/DataBinding.vue'
 import ListBinding from '@/views/ListBinding.vue'
 import IfBinding from '@/views/IfBinding.vue'
+import OnEvent from '@/views/OnEvent.vue'
+import ComputedWatch from '@/views/ComputedWatch.vue'
 const routes = [
   {
     path: '/',//접속경로
@@ -34,6 +36,16 @@ const routes = [
     name: 'IfBind',
     component : IfBinding
     // component: () => import( '../views/ListBinding.vue')
+  },
+  {
+    path: '/OnEvent',
+    name: 'OnEvent',
+    component : OnEvent
+  },
+  {
+    path: '/ComputedWatch',
+    name: 'ComputedWatch',
+    component : ComputedWatch
   }
 ]
 
