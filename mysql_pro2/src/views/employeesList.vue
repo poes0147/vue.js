@@ -12,8 +12,8 @@
             </thead>
             <tbody>
                 <template v-if="count > 0">
-                    <tr v-for="(info, idx) in employeesList" :ket="info.id"
-                        @click="goToInfo(info.id)">
+                    <tr v-for="(info, idx) in employeesList" :key="info.id"
+                         @click="goToInfo(info.id)">
                         <td>{{ idx + 1 }}</td>
                         <td>{{ info.id }}</td>
                         <td>{{ info.first_name }} {{ info.last_name }}</td>
